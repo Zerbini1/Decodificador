@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #B4D4FF;
+    --cor-secundaria: #EEF5FF;
+    --cor-terciaria: #176B87;
+    --cor-hover: #86B6F6;
+
+    --font-primaria: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+
+.corpo {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 40px 0px;
+    gap: 80px;
+    align-items: flex-end;
+}
+.corpo__imgLogo {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 0px 0px 0px 40px;
+    align-self: flex-start;
+}
+.corpo__estrutura {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+.corpo__estrutura__campoTextoInserir {
+    resize: none;
+    width: auto;
+    height: 635px;
+    border: none;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    outline: none;
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+}
+.corpo__estrutura__campoTextoInserir::placeholder {
+    color: var(--cor-terciaria);
+}
+
+
+.corpo__estrutura__botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.corpo__estrutura__botoes__img {
+    width: 252px;
+}
+.corpo__estrutura__botoes__botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    
+}
+.corpo__estrutura__botoes__botao__criptografia {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    width: 50%;
+    border-radius: 24px;
+    padding: 24px 0;
+    text-decoration: none;
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.corpo__estrutura__botoes__botao__descriptografia {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    width: 50%;
+    border-radius: 24px;
+    padding: 24px 0;
+    text-decoration: none;
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.corpo__campoTextoResultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    border-radius: 32px;
+    color: #343A40;
+    height: 944px;
+    width: 400px;
+    text-align: center;
+    
+    
+}
+.corpo__campoTextoResultado__texto {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 0px 20px;
+    text-justify: auto;
+}
+.corpo__campoTextoResultado_h2 {
+
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.corpo__campoTextoResultado_p {
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+    text-justify:distribute;
+    padding: 10px 0px 0px 0px;
+}
+.corpo__campoTextoResultado__img {
+    width: 336px;
+}
+
+
+.rodape {
+    padding: 20px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: auto;  
+}
+
+.rodape__icon {
+    width: 24px;
+}

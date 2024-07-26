@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main class="corpo">
+        <img class="corpo__imgLogo" src="assets/marioLogo.gif" alt="Logo">
+        <section class="corpo__estrutura">
+            
+            <textarea
+            class="corpo__estrutura__campoTextoInserir"
+            name="CampoTexto" 
+            id="CampoTexto"
+            rows="10" cols="50"
+            placeholder="Digite seu texto"></textarea>
+
+            <div class="corpo__estrutura__botoes">
+                <img class="corpo__estrutura__botoes__img" src="assets/aviso.png" alt="Apenas letras minusculas e sem acento">
+                <div class="corpo__estrutura__botoes__botao">
+                   <a class="corpo__estrutura__botoes__botao__criptografia" href="" onclick="criptografia()">Criptografar</a>
+                    <a class="corpo__estrutura__botoes__botao__descriptografia" href="" onclick="descriptografia()">Descriptografar</a> 
+                </div>
+                
+                
+            </div>
+        </section>
+        
+
+        <div class="corpo__campoTextoResultado">
+            <img class="corpo__campoTextoResultado__img" src="assets/marioLupa.png" alt="">
+            <div class="corpo__campoTextoResultado__texto">
+                <h2 class="corpo__campoTextoResultado_h2">Nenhuma mensagem encontrada</h2>
+                <p class="corpo__campoTextoResultado_p">Digite um texto que você deseja criptografar ou descriptografar.</p>  
+            </div>
+            
+        </div> 
+
+        
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Felipe Zerbini 
+            <a  href="https://www.linkedin.com/in/felipe-zerbini/"><img class="rodape__icon" src="assets/iconmonstr-linkedin-3-240.png" alt="linkedin"></a> 
+            <a  href="https://github.com/Zerbini1"><img class="rodape__icon" src="assets/iconmonstr-github-3-240.png" alt="github"></a>
+        </p>
+    </footer>
+</body>
+</html>
