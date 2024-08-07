@@ -38,7 +38,7 @@ body {
     align-self: flex-start;
 }
 .corpo__estrutura {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -56,6 +56,7 @@ body {
     font-size: 2rem;
     font-weight: 400;
     color: var(--cor-terciaria);
+    text-decoration: none;
 }
 .corpo__estrutura__campoTextoInserir::placeholder {
     color: var(--cor-terciaria);
@@ -66,6 +67,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    
+
 }
 .corpo__estrutura__botoes__img {
     width: 252px;
@@ -121,14 +124,16 @@ body {
     height: 944px;
     width: 400px;
     text-align: center;
-    
-    
+    text-decoration: none;
 }
 .corpo__campoTextoResultado__texto {
     display: flex;
     flex-direction: column;
     padding: 10px 20px 0px 20px;
     text-justify: auto;
+}
+.corpo__campoTextoResultado__img {
+    width: 336px;
 }
 .corpo__campoTextoResultado_h2 {
 
@@ -143,9 +148,7 @@ body {
     text-justify:distribute;
     padding: 10px 0px 0px 0px;
 }
-.corpo__campoTextoResultado__img {
-    width: 336px;
-}
+
 
 
 .rodape {
@@ -161,4 +164,51 @@ body {
 
 .rodape__icon {
     width: 24px;
+}
+
+.corpo__campoTextoResultado__descriptografado {
+    display: none;
+    background-color: var(--cor-secundaria);
+    border-radius: 32px;
+    color: #343A40;
+    height: 944px;
+    width: 400px;
+    border-color: var(--cor-primaria);
+    outline: none;
+    flex-direction: column;
+    align-items: center;
+}
+.corpo__campoTextoResultado__descriptografado__textarea {
+    display: none;
+    resize: none;
+    background-color: var(--cor-secundaria);
+    color: #343A40;
+    border-color: var(--cor-secundaria);
+    outline: none;
+    /* text-align: justify; */
+    flex-direction: column;
+    justify-content: center;
+    height: 834px;
+
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 32px 32px 0px 32px;
+}
+
+.corpo__campoTextoResultado__descriptografado__botaoCopiar {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    width: 50%;
+    border-radius: 24px;
+    padding: 24px 0;
+    text-decoration: none;
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 400;
 }

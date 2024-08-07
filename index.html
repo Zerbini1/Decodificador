@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
     <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
             <div class="corpo__estrutura__botoes">
                 <img class="corpo__estrutura__botoes__img" src="assets/aviso.png" alt="Apenas letras minusculas e sem acento">
                 <div class="corpo__estrutura__botoes__botao">
-                   <a class="corpo__estrutura__botoes__botao__criptografia" href="" onclick="criptografia()">Criptografar</a>
+                    <a class="corpo__estrutura__botoes__botao__criptografia" href="" onclick="criptografia()">Criptografar</a>
                     <a class="corpo__estrutura__botoes__botao__descriptografia" href="" onclick="descriptografia()">Descriptografar</a> 
                 </div>
                 
@@ -41,7 +42,12 @@
                 <p class="corpo__campoTextoResultado_p">Digite um texto que você deseja criptografar ou descriptografar.</p>  
             </div>
             
-        </div> 
+        </div>
+        <div class="corpo__campoTextoResultado__descriptografado">
+           <textarea class="corpo__campoTextoResultado__descriptografado__textarea" name="texto_descriptografado" id="texto_descriptografado" readonly></textarea> 
+           <a class="corpo__campoTextoResultado__descriptografado__botaoCopiar" href="" onclick="copiar()">Copiar</a> 
+        </div>
+        
 
         
     </main>
@@ -52,5 +58,7 @@
             <a  href="https://github.com/Zerbini1"><img class="rodape__icon" src="assets/iconmonstr-github-3-240.png" alt="github"></a>
         </p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
